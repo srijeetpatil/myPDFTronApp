@@ -1,0 +1,778 @@
+title,cwe,description,cvss,finding,stream,kind,where,snippet,method
+393. Use of software with known vulnerabilities in development,CWE-1035 + CWE-1321 + CWE-937,Use of express at version 4.17.1 with ['CVE-2022-24999'] in myApp/package.json,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/393,skims,SCA,98,"
+   88 |     ""cssnano"": ""^4.1.10"",
+   89 |     ""cypress"": ""^3.8.2"",
+   90 |     ""cypress-image-snapshot"": ""^3.1.1"",
+   91 |     ""eslint"": ""^6.8.0"",
+   92 |     ""eslint-plugin-babel"": ""^5.3.0"",
+   93 |     ""eslint-plugin-cypress"": ""^2.8.1"",
+   94 |     ""eslint-plugin-import"": ""^2.20.0"",
+   95 |     ""eslint-plugin-jsx-a11y"": ""^6.2.3"",
+   96 |     ""eslint-plugin-react"": ""^7.18.0"",
+   97 |     ""eslint-plugin-react-hooks"": ""^2.3.0"",
+>  98 |     ""express"": ""^4.17.1"",
+   99 |     ""file-loader"": ""^5.0.2"",
+  100 |     ""identity-obj-proxy"": ""^3.0.0"",
+  101 |     ""ip"": ""^1.1.5"",
+  102 |     ""jest"": ""^26.4.2"",
+  103 |     ""mini-css-extract-plugin"": ""0.8.0"",
+  104 |     ""opn"": ""^6.0.0"",
+  105 |     ""postcss-import"": ""^12.0.1"",
+  106 |     ""postcss-loader"": ""^3.0.0"",
+  107 |     ""postcss-preset-env"": ""^6.7.0"",
+  108 |     ""prop-types"": ""^15.7.2"",
+      ^ Col 0
+",npm.npm_pkg_json
+393. Use of software with known vulnerabilities in development,CWE-1321 + CWE-347 + CWE-601,"Use of node-forge at version 0.10.0 with ['GHSA-2r2c-g63r-vccr', 'GHSA-5rrq-pxf6-6jx5', 'GHSA-8fr3-hfg3-gpgp', 'GHSA-cfm4-qjh2-4765', 'GHSA-gf8q-jrpm-jvxq', 'GHSA-x4jg-mjrx-434g', 'CVE-2022-24773', 'CVE-2022-0122', 'CVE-2022-24771', 'CVE-2022-24772'] in myApp/package-lock.json",CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/393,skims,SCA,19086,"
+  19076 |       }
+  19077 |     },
+  19078 |     ""node-fetch"": {
+  19079 |       ""version"": ""2.6.7"",
+  19080 |       ""resolved"": ""https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.7.tgz"",
+  19081 |       ""integrity"": ""sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ=="",
+  19082 |       ""requires"": {
+  19083 |         ""whatwg-url"": ""^5.0.0""
+  19084 |       }
+  19085 |     },
+> 19086 |     ""node-forge"": {
+  19087 |       ""version"": ""0.10.0"",
+  19088 |       ""resolved"": ""https://registry.npmjs.org/node-forge/-/node-forge-0.10.0.tgz"",
+  19089 |       ""integrity"": ""sha512-PPmu8eEeG9saEUvI97fm4OYxXVB6bFvyNTyiUOBichBpFG8A1Ljw3bY62+5oOjDEMHRnd0Y7HQ+x7uzxOzC6JA=="",
+  19090 |       ""dev"": true
+  19091 |     },
+  19092 |     ""node-int64"": {
+  19093 |       ""version"": ""0.4.0"",
+  19094 |       ""resolved"": ""https://registry.npmjs.org/node-int64/-/node-int64-0.4.0.tgz"",
+  19095 |       ""integrity"": ""sha512-O5lz91xSOeoXP6DulyHfllpq+Eg00MWitZIbtPfoSEvqIHdl5gfcY6hYzDWnj0qD5tz52PI08u9qUvSVeUBeHw=="",
+  19096 |       ""dev"": true
+        ^ Col 0
+",npm.npm_pkg_lock_json
+393. Use of software with known vulnerabilities in development,CWE-1321,"Use of async at version 2.6.1 with ['GHSA-fwr7-v2mv-hh25', 'CVE-2021-43138'] in myApp/package-lock.json",CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/393,skims,SCA,7293,"
+   7283 |       ""resolved"": ""https://registry.npmjs.org/ast-types-flow/-/ast-types-flow-0.0.8.tgz"",
+   7284 |       ""integrity"": ""sha512-OH/2E5Fg20h2aPrbe+QL8JZQFko0YZaF+j4mnQ7BGhfavO7OpSLa8a0y9sBwomHdSbkhTS8TQNayBfnW5DwbvQ=="",
+   7285 |       ""dev"": true
+   7286 |     },
+   7287 |     ""astral-regex"": {
+   7288 |       ""version"": ""1.0.0"",
+   7289 |       ""resolved"": ""https://registry.npmjs.org/astral-regex/-/astral-regex-1.0.0.tgz"",
+   7290 |       ""integrity"": ""sha512-+Ryf6g3BKoRc7jfp7ad8tM4TtMiaWvbF/1/sQcZPkkS7ag3D5nMBCe2UfOTONtAkaG0tO0ij3C5Lwmf1EiyjHg=="",
+   7291 |       ""dev"": true
+   7292 |     },
+>  7293 |     ""async"": {
+   7294 |       ""version"": ""2.6.1"",
+   7295 |       ""resolved"": ""https://registry.npmjs.org/async/-/async-2.6.1.tgz"",
+   7296 |       ""integrity"": ""sha512-fNEiL2+AZt6AlAw/29Cr0UDe4sRAHCpEHh54WMz+Bb7QfNcFw4h3loofyJpLeQs4Yx7yuqu/2dLgM5hKOs6HlQ=="",
+   7297 |       ""dev"": true,
+   7298 |       ""requires"": {
+   7299 |         ""lodash"": ""^4.17.10""
+   7300 |       }
+   7301 |     },
+   7302 |     ""async-each"": {
+   7303 |       ""version"": ""1.0.6"",
+        ^ Col 0
+",npm.npm_pkg_lock_json
+393. Use of software with known vulnerabilities in development,CWE-1321,"Use of minimist at version 0.0.8 with ['GHSA-vh95-rmgr-6w4m', 'GHSA-xvch-5gv4-984h', 'CVE-2020-7598', 'CVE-2021-44906'] in myApp/package-lock.json",CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/393,skims,SCA,18822,"
+  18812 |     },
+  18813 |     ""minimatch"": {
+  18814 |       ""version"": ""3.1.2"",
+  18815 |       ""resolved"": ""https://registry.npmjs.org/minimatch/-/minimatch-3.1.2.tgz"",
+  18816 |       ""integrity"": ""sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw=="",
+  18817 |       ""dev"": true,
+  18818 |       ""requires"": {
+  18819 |         ""brace-expansion"": ""^1.1.7""
+  18820 |       }
+  18821 |     },
+> 18822 |     ""minimist"": {
+  18823 |       ""version"": ""0.0.8"",
+  18824 |       ""resolved"": ""https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz"",
+  18825 |       ""integrity"": ""sha512-miQKw5Hv4NS1Psg2517mV4e4dYNaO3++hjAvLOAzKqZ61rH8NS1SK+vbfBWZ5PY/Me/bEWhUwqMghEW5Fb9T7Q=="",
+  18826 |       ""dev"": true
+  18827 |     },
+  18828 |     ""minipass"": {
+  18829 |       ""version"": ""3.3.6"",
+  18830 |       ""resolved"": ""https://registry.npmjs.org/minipass/-/minipass-3.3.6.tgz"",
+  18831 |       ""integrity"": ""sha512-DxiNidxSEK+tHG6zOIklvNOwm3hvCrbUrdtzY74U6HKTJxvIDfOUL5W5P2Ghd3DTkhhKPYGqeNUIh5qcM4YBfw=="",
+  18832 |       ""dev"": true,
+        ^ Col 0
+",npm.npm_pkg_lock_json
+393. Use of software with known vulnerabilities in development,CWE-1333 + CWE-22 + CWE-27 + CWE-400,"Use of moment at version 2.24.0 with ['GHSA-8hfj-j24r-96c4', 'GHSA-wc69-rhjr-hc9g', 'CVE-2022-24785', 'CVE-2022-31129'] in myApp/package-lock.json",CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/393,skims,SCA,18938,"
+  18928 |     },
+  18929 |     ""mkdirp"": {
+  18930 |       ""version"": ""0.5.1"",
+  18931 |       ""resolved"": ""https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz"",
+  18932 |       ""integrity"": ""sha512-SknJC52obPfGQPnjIkXbmA6+5H15E+fR+E4iR2oQ3zzCLbd7/ONua69R/Gw7AgkTLsRG+r5fzksYwWe1AgTyWA=="",
+  18933 |       ""dev"": true,
+  18934 |       ""requires"": {
+  18935 |         ""minimist"": ""0.0.8""
+  18936 |       }
+  18937 |     },
+> 18938 |     ""moment"": {
+  18939 |       ""version"": ""2.24.0"",
+  18940 |       ""resolved"": ""https://registry.npmjs.org/moment/-/moment-2.24.0.tgz"",
+  18941 |       ""integrity"": ""sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg=="",
+  18942 |       ""dev"": true
+  18943 |     },
+  18944 |     ""move-concurrently"": {
+  18945 |       ""version"": ""1.0.1"",
+  18946 |       ""resolved"": ""https://registry.npmjs.org/move-concurrently/-/move-concurrently-1.0.1.tgz"",
+  18947 |       ""integrity"": ""sha512-hdrFxZOycD/g6A6SoI2bB5NA/5NEqD0569+S47WZhPvm46sD50ZHdYaFmnua5lndde9rCHGjmfK7Z8BuCt/PcQ=="",
+  18948 |       ""dev"": true,
+        ^ Col 0
+",npm.npm_pkg_lock_json
+393. Use of software with known vulnerabilities in development,CWE-1333,"Use of http-cache-semantics at version 3.8.1 with ['GHSA-rc47-6667-2j5j', 'CVE-2022-25881'] in myApp/package-lock.json",CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/393,skims,SCA,14144,"
+  14134 |       ""resolved"": ""https://registry.npmjs.org/htmlparser2/-/htmlparser2-6.1.0.tgz"",
+  14135 |       ""integrity"": ""sha512-gyyPk6rgonLFEDGoeRgQNaEUvdJ4ktTmmUh/h2t7s+M8oPpIPxgNACWa+6ESR57kXstwqPiCut0V8NRpcwgU7A=="",
+  14136 |       ""dev"": true,
+  14137 |       ""requires"": {
+  14138 |         ""domelementtype"": ""^2.0.1"",
+  14139 |         ""domhandler"": ""^4.0.0"",
+  14140 |         ""domutils"": ""^2.5.2"",
+  14141 |         ""entities"": ""^2.0.0""
+  14142 |       }
+  14143 |     },
+> 14144 |     ""http-cache-semantics"": {
+  14145 |       ""version"": ""3.8.1"",
+  14146 |       ""resolved"": ""https://registry.npmjs.org/http-cache-semantics/-/http-cache-semantics-3.8.1.tgz"",
+  14147 |       ""integrity"": ""sha512-5ai2iksyV8ZXmnZhHH4rWPoxxistEexSi5936zIQ1bnNTW5VnA85B6P/VpXiRM017IgRvb2kKo1a//y+0wSp3w=="",
+  14148 |       ""dev"": true
+  14149 |     },
+  14150 |     ""http-errors"": {
+  14151 |       ""version"": ""2.0.0"",
+  14152 |       ""resolved"": ""https://registry.npmjs.org/http-errors/-/http-errors-2.0.0.tgz"",
+  14153 |       ""integrity"": ""sha512-FtwrG/euBzaEjYeRqOgly7G0qviiXoJWnvEH2Z1plBdXgbyjv34pHTSb9zoeHMyDy33+DWy5Wt9Wo+TURtOYSQ=="",
+  14154 |       ""dev"": true,
+        ^ Col 0
+",npm.npm_pkg_lock_json
+393. Use of software with known vulnerabilities in development,CWE-144 + CWE-74,"Use of postcss at version 7.0.39 with ['GHSA-7fh5-64p2-3v2j', 'CVE-2023-44270'] in myApp/package-lock.json",CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/393,skims,SCA,20071,"
+  20061 |       ""requires"": {
+  20062 |         ""@babel/runtime"": ""^7.17.8""
+  20063 |       }
+  20064 |     },
+  20065 |     ""posix-character-classes"": {
+  20066 |       ""version"": ""0.1.1"",
+  20067 |       ""resolved"": ""https://registry.npmjs.org/posix-character-classes/-/posix-character-classes-0.1.1.tgz"",
+  20068 |       ""integrity"": ""sha512-xTgYBc3fuo7Yt7JbiuFxSYGToMoz8fLoE6TC9Wx1P/u+LfeThMOAqmuyECnlBaaJb+u1m9hHiXUEtwW4OzfUJg=="",
+  20069 |       ""dev"": true
+  20070 |     },
+> 20071 |     ""postcss"": {
+  20072 |       ""version"": ""7.0.39"",
+  20073 |       ""resolved"": ""https://registry.npmjs.org/postcss/-/postcss-7.0.39.tgz"",
+  20074 |       ""integrity"": ""sha512-yioayjNbHn6z1/Bywyb2Y4s3yvDAeXGOyxqD+LnVOinq6Mdmd++SW2wUNVzavyyHxd6+DxzWGIuosg6P1Rj8uA=="",
+  20075 |       ""dev"": true,
+  20076 |       ""requires"": {
+  20077 |         ""picocolors"": ""^0.2.1"",
+  20078 |         ""source-map"": ""^0.6.1""
+  20079 |       },
+  20080 |       ""dependencies"": {
+  20081 |         ""picocolors"": {
+        ^ Col 0
+",npm.npm_pkg_lock_json
+117. Unverifiable files,CWE-377,Unverifiable file in myApp/build/webviewer-ui.min.js,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/117,skims,SAST,0,"
+    1 | !function(e){function t(t){for(var n,r,i=t[0],a=t[1],l=0,u=[];l<i.length;l++)r=i[l],Object.prototype.hasOwnProperty.call(
+    2 | /*!
+    3 |  Copyright (c) 2018 Jed Watson.
+    4 |  Licensed under the MIT License (MIT), see
+    5 |  http://jedwatson.github.io/classnames
+    6 | */!function(){""use strict"";var n={}.hasOwnProperty;function o(){for(var e="""",t=0;t<arguments.length;t++){var n=arguments[
+    7 | /**
+    8 |  * @license
+    9 |  * Lodash <https://lodash.com/>
+   10 |  * Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
+   11 |  * Released under MIT license <https://lodash.com/license>
+   12 |  * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+   13 |  * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+   14 |  */(function(){var i=""Expected a function"",a=""__lodash_placeholder__"",l=[[""ary"",128],[""bind"",1],[""bindKey"",2],[""curry"",8]
+   15 | ᠎""!==""​
+   16 | ᠎""[e]()||r&&i[e].name!==e}))}},function(e,t,n){""use strict"";var r=n(11),o=n(9),i=n(143),a=n(23).NATIVE_ARRAY_BUFFER_VIEWS
+   17 | /*
+   18 | object-assign
+   19 | (c) Sindre Sorhus
+   20 | @license MIT
+   21 | */var r=Object.getOwnPropertySymbols,o=Object.prototype.hasOwnProperty,i=Object.prototype.propertyIsEnumerable;function a
+      ^ Col 0
+",generic.unverifiable_files
+117. Unverifiable files,CWE-377,Unverifiable file in myApp/lib/core/assets/mime-types/test.wasm,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/117,skims,SAST,0,"
+
+",generic.unverifiable_files
+117. Unverifiable files,CWE-377,Unverifiable file in myApp/lib/core/external/decode.min.js,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/117,skims,SAST,0,"
+   1 | if (!Int32Array.__proto__.from) {
+   2 |   Object.defineProperty(Int32Array.__proto__, 'from', {
+   3 |     value: function(obj) {
+   4 |       obj = Object(obj);
+   5 |       if (!obj['length']) {
+   6 |         return new this(0);
+   7 |       }
+   8 |       var typed_array = new this(obj.length);
+   9 |       for (var i = 0; i < typed_array.length; i++) {
+  10 |         typed_array[i] = obj[i];
+  11 |       }
+  12 |       return typed_array;
+  13 |     }
+  14 |   });
+  15 | }
+  16 |
+  17 | if (!Array.prototype.copyWithin) {
+  18 |   Array.prototype.copyWithin = function(target, start, end) {
+  19 |     var O = Object(this);
+  20 |     var len = O.length >>> 0;
+  21 |     var to = target | 0;
+     ^ Col 0
+",generic.unverifiable_files
+117. Unverifiable files,CWE-377,Unverifiable file in myApp/lib/core/external/model-viewer-1.3.0.min.js,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/117,skims,SAST,0,"
+    1 | /**
+    2 |  * @license
+    3 |  * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+    4 |  * This code may only be used under the BSD style license found at
+    5 |  * http://polymer.github.io/LICENSE.txt
+    6 |  * The complete set of authors may be found at
+    7 |  * http://polymer.github.io/AUTHORS.txt
+    8 |  * The complete set of contributors may be found at
+    9 |  * http://polymer.github.io/CONTRIBUTORS.txt
+   10 |  * Code distributed by Google as part of the polymer project is also
+   11 |  * subject to an additional IP rights grant found at
+   12 |  * http://polymer.github.io/PATENTS.txt
+   13 |  */
+   14 | String(Math.random()).slice(2),window.trustedTypes&&trustedTypes.createPolicy(""lit-html"",{createHTML:t=>t})
+   15 | /**
+   16 |  * @license
+   17 |  * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
+   18 |  * This code may only be used under the BSD style license found at
+   19 |  * http://polymer.github.io/LICENSE.txt
+   20 |  * The complete set of authors may be found at
+   21 |  * http://polymer.github.io/AUTHORS.txt
+      ^ Col 0
+",generic.unverifiable_files
+117. Unverifiable files,CWE-377,Unverifiable file in myApp/lib/core/external/model-viewer-legacy-1.3.0.min.js,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/117,skims,SAST,0,"
+     1 | /**
+     2 |  * Copyright (c) 2014-present, Facebook, Inc.
+     3 |  *
+     4 |  * This source code is licensed under the MIT license found in the
+     5 |  * LICENSE file in the root directory of this source tree.
+     6 |  */!function(a){""use strict"";function b(a,b,c,e){// If outerFn provided and outerFn.prototype is a Generator, then outerF
+     7 |      var f=b&&b.prototype instanceof d?b:d,g=Object.create(f.prototype),h=new m(e||[]);return g._invoke=i(a,c,h),g}// Try
+     8 |      // record like context.tryEntries[i].completion. This interface could
+     9 |      // have been (and was previously) designed to take a closure to be
+    10 |      // invoked without arguments, but in all the cases we care about we
+    11 |      // already have an existing method we want to call, so there's no need
+    12 |      // to create a new function object. We can even get away with assuming
+    13 |      // the method takes exactly one argument, since that happens to be true
+    14 |      // in every case, so we don't have to touch the arguments object. The
+    15 |      // only additional allocation required is the completion record, which
+    16 |      // has a stable shape and so hopefully should be cheap to allocate.
+    17 |      function c(a,b,c){try{return{type:""normal"",arg:a.call(b,c)}}catch(a){return{type:""throw"",arg:a}}}// Dummy constructo
+    18 |      // .constructor.prototype properties for functions that return Generator
+    19 |      // objects. For full spec compliance, you may wish to configure your
+    20 |      // minifier not to mangle the names of these two functions.
+    21 |      function d(){}function e(){}function f(){}// This is a polyfill for %IteratorPrototype% for environments that
+       ^ Col 0
+",generic.unverifiable_files
+117. Unverifiable files,CWE-377,Unverifiable file in myApp/lib/core/external/pako_inflate.min.js,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/117,skims,SAST,0,"
+    | /* pako 1.0.5 nodeca/pako */
+  2 | !function(e){if(""object""==typeof exports&&""undefined""!=typeof module)module.exports=e();else if(""function""==typeof define
+    ^ Col 0
+",generic.unverifiable_files
+117. Unverifiable files,CWE-377,Unverifiable file in myApp/lib/core/legacyOffice/WebB2XOfficeWorkerWasm.br.wasm,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/117,skims,SAST,0,"
+      1 | �#8t����s����{Y �j��$����2y�Mf�e�d40���]!1���]�""�A�4�ذE���!R����=QD��Q�Vm�������~���=�Ok��������
+      2 | J�y3<���ߜ�w������:o.>�w�+1o�T�ȓ�)6ed#$�p��
+      3 | ��B!R�P��KckH�
+      4 |
+      5 | 4�j����i�������ec�!�9�3k�q
+      6 | .(
+      7 | R��� ��i��G����O�T�#�PUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU���}��Z�ܻϽ�u==��Z��""D*X�$D7�
+      8 | �x�D(/O��>0����K�TQ��,)� �#���uѯ��T�Ɗ�(�v�Z1��:��C�ԧ�!�ǉ�""�|
+      9 |
+     10 | F>u��`
+     11 | �@��K#G9($B���z���#��`|s�#d�Pk����{�N��'�L����t6x�fC]0�O�<����fO��>3i��t\��3H�,�npa`ؠ?{N%�����s�̦��f�P���y�)
+     12 | '0�qfTf;�S��0���Ƀ'W�s
+     13 | ���/lHDDD�����t�X�����k\'���C��lX�.D]���9�
+     14 | l.{p�}�$l1�mmRl�h;�P��~��S�`�C��z���)/j�]����ʇA<ܰAAD
+     15 | @�NΧG4��@aɣ""��1�a��
+     16 | E�%�#T���}�Oh?Lݪ��X,�x����(�m'�pH����N?�d{5Q9=���q�0Ep�X|լ��""
+     17 | �
+     18 | �#�T>�� �[a<<C�)9� �pTAZ_��S��:QDEc��8�t괈�u����3���g��/[%�T�~��M8�%|�s�[8�ϩ�Sߟ�}�r�NC� ��]���dG�Ҕ�hkN
+     19 | ?��@���K(�c)F)�9�f=�zt���?a2��\����h����K���|~y}�� �,&��Zn�m٘�V>�zA�����;_�{I=V�ʉCP3�(�b
+     20 | ��e~B���W��X�Y�q�=
+     21 | �v1i�9�oF���Q6jC4W
+        ^ Col 0
+",generic.unverifiable_files
+117. Unverifiable files,CWE-377,Unverifiable file in myApp/lib/core/legacyOffice/WebB2XOfficeWorkerWasm.gz.wasm,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/117,skims,SAST,0,"
+      1 | ��c�`WebB2XOfficeWorkerWasm.wasm�TAvwS7���bH�` dK���{oܽwwpݻ���
+      2 | QQD�MQ�
+      3 | �bCE{Ć(�������&���{7;������O�M���(� �ᇿ���헱�
+      4 | @
+      5 | ~
+      6 | i�o9$@�U""��'E|
+      7 | ���F(h�7_�p
+      8 | o�7ȗ��o
+      9 |  ��J���(D[I�IN<�(�,""����h�������kn(���~�)��Pq��
+     10 | 73�_��o8�o8~��~��SQ���2�CN+��,����p�*����!����د~�AH�z!~�O�
+     11 | 33]�i|�/��S�n��A�cN@�7<�""�����`~3k�y�õ�
+     12 | 7�جA�:�����+l\��׾�4Qs8-���`
+     13 | �*�r�k��#r������B$
+     14 | ���vD�;���l��.""��������s���?B�
+     15 | #���9�����F��,�
+     16 | ��@l
+     17 | ~;���r������B^��w#1
+     18 | ~Od���}_���#��7q��H�����a$�� ���G��r�c���G�
+     19 | �D$^�D���OE�:��3�>��CL
+     20 | NA����G���H
+     21 | ��xc��| ��T��J*R쫩|찯�򍱯���ž�|3*�V*?qؼT�S��Ѫ�D 6���h��E������� ��è�E��V�8j�'Q�O�v~%~
+        ^ Col 0
+",generic.unverifiable_files
+117. Unverifiable files,CWE-377,Unverifiable file in myApp/lib/core/office/WebOfficeWorkerWasm.br.wasm,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/117,skims,SAST,0,"
+       1 | ���?��߈t�Zy�ڳ��!�$���f����d�F+���ݜ!!MI!�jBI�
+       2 | ����Z
+       3 | ��Ҵ�������{*�z��6��?�sڮһt�U�:U��j��w��n�FmaYZ�GQF@��!��
+       4 | �C$�$m7K���~�d��ϙq�-ZKkP��B�8R��q��T���������������������������������������L��|��}ν��s�oʛ����%�%�$3B��!&,B!
+       5 | iUP��X���*uhmk';���+m��ק��wI�`H��U:5�8Mh�d*����� Ɋsr�j�=�5�u�
+       6 | �%��f�́
+       7 | ZR8�L��T�[��[U
+       8 | U�Gڝ:Nw��
+       9 | �۶��1$�T��ԓ^�׿.�;Y��� ��U6��1�d�=,
+      10 | i�
+      11 | ����P�X��Ӊ���M�)�h����R
+      12 | �ô���ٹ9l��'�
+      13 | �#q� ��8�Ha~�{��(�iM���KTӃrˇ��a
+      14 |
+      15 | F�0�e�!�+�1���*F���/�}�#2l��߁G{��a�Gg�>�d-E�ǕT��Pp�F��le��� ��q�z�cr��i �b���S��T��e����`��0X���&�4[�p�2�
+      16 |
+      17 | ��Y)��Ɂ��¡Ffu�9Xc���V(���_�
+      18 | �
+      19 | �Kr�yh�q�*�.��F
+      20 | ���P�04kr��=
+      21 | ���I)e�l[��$�Mq�Y�vaHN� o.""&1F[��E�*�D�u)dP@ZVC��7�������q)��|�H��b�~E�9���ȉ@w��Q4S�
+         ^ Col 0
+",generic.unverifiable_files
+117. Unverifiable files,CWE-377,Unverifiable file in myApp/lib/core/office/WebOfficeWorkerWasm.gz.wasm,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/117,skims,SAST,0,"
+       1 | �^�`WebOfficeWorkerWasm.wasm�] xE�7=M3���`�
+       2 | YAV%�. �+���
+       3 | weCH
+       4 |
+       5 | �
+       6 | �c  gB� G�K�>D@N9�AQ9��Td�W�3=Gp׽������^�z��W��']
+       7 | %e�R��\O})W�E�}m�H��
+       8 | W�E0�\����
+       9 | ��#��8P{��b�ly���.)h�WU�e,ie3�lȍ�5.HdsU
+      10 | �lN�˪��;���D��Ynh�
+      11 | ��O�$�=+�H ��8E�H6�|���
+      12 | rD,�g�+GR�����l��/[�Z�ŕ�b�lɮd�͑Ĳ�n�9B-9>��IJ%et�D����X��z�h);H�>���
+      13 | %��
+      14 | fs�kX
+      15 | �0s|�
+      16 | �a�>��#���9AE��Q#Bdf�Hi1��L�F��2��q�٥����MS�(��=-�,�R��X�)M��s��ؖ��5o)�:�|
+      17 | a�n�v�K��J5�W�ZS5�B���_�Y��&na���O�����얝˘t��""s�>�r�
+      18 | ����XRʖʜL��
+      19 | ��ja7�����
+      20 | Yh���'�7bh���_@9L_�?k_ ��
+      21 | �[�h#�'�
+         ^ Col 0
+",generic.unverifiable_files
+117. Unverifiable files,CWE-377,Unverifiable file in myApp/lib/core/pdf/full/PDFNetCWasm.br.wasm,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/117,skims,SAST,0,"
+       1 | �������t������
+       2 | �񝰍�X�N�>��}-���7sӳ�^<����""���e��֝n}�e��:G���)�P�$Nȁ�B�$��_U��k<���{�@o7�w��O��l�WӞ��n]���i�8G�v�n
+       3 | ɮg�����hQ#Y�$�d�
+       4 | &�Z���@p�!� 1�If�1F�3�I�| ̐d&M<3����{a0�4������C���c��2�s�3UR�&M1��R
+       5 | ̠cb�(�
+       6 | (C�(�Ut݀R���-@i����!�����������������������������������������������������<߻�k�s_�9��a��2���a&���� !�0$�@$��F�I
+       7 | pq������ڪ�����������`(�V&4,b�p���n��}
+       8 | ?
+       9 | Ag�(
+      10 |  �L��C�)�$
+      11 | �t�3""&��Y�:'7��Ϣ��t$����&)�,�����WTV�j�ט�Z�r
+      12 | �'[S�6hGXMjljFK�M��y+0��CԈ��Y���de�����K�:-0�
+      13 | ��P�-��V�-�*H��J�z�B�(��/��� �qʒԥ��ˆ��2x�L�:
+      14 | %���i�t�}U��
+      15 | 'x5�e���N��Z���w)Q)qԔ�E
+      16 | �a�*��׆��%'�Yv�(6���1��s�f7јزUS7�m��;�h<Qj����ܕ�#��q��t��e{n���N����,ד��'����
+      17 |
+      18 | i��z���ȊjM�~N�S��A�������E\͍U���D�;<�=���k��@�֤û�'�E�.;��REn�>��$&n�Sp;ƥ���ܱ�8 �3\w�a�e��
+      19 | ��W�#��I��J�ο���۽{h>9�0�����f�2ʵPH��r�V���qW��j�I�Q�a����N��Pt�ˎ#t,��p^�=���he
+      20 | �����1�}4%�H���e���F�{_:�Tc�|�p�O)(
+      21 | +;a����>}�0��N�*���`��,�Ś2u�Û�x==��V(8�'��pN���aģ���< 2q���wcѳ2�z��,�������pa�wW�T`P�?UF��4<�eԷ]�m��n<�}߻Ln
+         ^ Col 0
+",generic.unverifiable_files
+117. Unverifiable files,CWE-377,Unverifiable file in myApp/lib/core/pdf/full/PDFNetThreadedWasm.br.wasm,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/117,skims,SAST,0,"
+       1 | �����?��靮�K��>l�����F;���Ҍ�.�>i�Qd|�zW�W��/����,�6�$$M[������Ҟ�6Bh�ih��!�/���o�-��_b�����Og?�jp��:
+       2 | U�u}�����ǫ�����*;F��1rl�MY٥ԭ���H�E���N��1v
+       3 | Kcx�{�@癸�� t�n������>��߳C��
+       4 | C$M��n�# (�Y=��:;9�#)(�1��Ø�0`
+       5 | $Wk @�R�`�-̓���`�
+       6 | ����QU~�ETUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUߜ��ys�_��;��{�gf�̤�ɤLJ%$!!�$$!!B!DJ���$�
+       7 | *������ю>}��{��������&&��Y��N����ǋ��/�8A��C p&�%%��""-�O�r�� �3a�de���D�|�~�L���h���J�Ҳ��~�&*Q��R%ճҲJHv
+       8 | �����
+       9 | RZ�jt;��
+      10 | ʹ�.""�
+      11 | 3�Uq��>�_��Krt�$Ý��Ԉ
+      12 | �N�5�$ �XwEOV��T��'�޾�6�c&U�Fe��j
+      13 |
+      14 | � ��L��*`���Ţ*Q�x�҇P4}ˈ�
+      15 | vX��}��H ��r��Ya�
+      16 | �t���u�/���Ȉ��Z�0ʏP�U`��
+      17 | c�T��4k`�B.�(�aG��:�1;a�����,��1�""M�&1��q8�3�0���^�L��:�Q�!R�
+      18 |
+      19 |
+      20 | #g 1� JT'F�D�I�@�#(%�ڡ��
+      21 | ��Pf3���p�l�83��z���6mH�A�A�aq�
+         ^ Col 0
+",generic.unverifiable_files
+117. Unverifiable files,CWE-377,Unverifiable file in myApp/lib/core/pdf/lean/PDFNetCWasm.br.wasm,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/117,skims,SAST,0,"
+      1 | �U��o����r[g��df�aFCZ`$2�{��;����޹��szr ibZf�鞛�����L�I8baCx5��F1j�L�ZV �U��Vi�ϣ��aI��
+      2 | ��5�o�nBxڻ�?���)g�?��坳��T=���1�zZբ����x�Y!ZB�#
+      3 | �f{v�b@f�8,�(f
+      4 | lȢ8�I�!q��::��'�j��2z�����-&�Nz�/�V��.H
+      5 | � ����q����p����/TUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU��'�y�wگuλ{�{��*���$�@�Q$�њӊE1��X
+      6 | �����K�ۉ���q
+      7 | ;q
+      8 | ��!���L2If���
+      9 | ¢�B���1&Bb�C�q�P� ��PʷKۋ7�8[s�rr�A�""�\TL�L ��K9dW�����˪b=򴧠ؐ��v���^���E?��WF��3�~ b
+     10 | ���>����V��<����d�S
+     11 | �rCy�H�
+     12 | 5ZZZ�DрQmYc�
+     13 | �ƍ�@�#
+     14 | &b ��NFo�)�>5��'i��>���i�N3
+     15 | �i��Y�c[fStE�t�p�IbV̛�
+     16 | 暂+�
+     17 | 
+     18 | ��*\bp��K)/�N�CJ�����Q:�Z=�r��J��Z���-�u�\�k' ���0/�WA6
+     19 | 6!Λ�e�""��BQm��6��v��E!o�J���vc��Y��I����B�YZ����5��)ph�k�1�œ�n.�b����
+     20 | @�/g�A>��,P��:E%
+     21 | ���ІR���e.��(�+D�,����B��H�z8d#�#
+        ^ Col 0
+",generic.unverifiable_files
+117. Unverifiable files,CWE-377,Unverifiable file in myApp/lib/core/pdf/lean/PDFNetThreadedWasm.br.wasm,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/117,skims,SAST,0,"
+      1 | �z�����ӫ���̳��]tV;�����=9�""���1�
+      2 | ��Sh�'
+      3 | ߦ��)���5��f��
+      4 | Gw�n�����]e�R�B�Mw��X�Ѻ���@R�
+      5 | �$BM�Q�E�y�(��
+      6 | �7�xb�H�a0�4�ޯ;���[��o�N,;-��K��N�0q#D��""��QG�-P
+      7 | 4���!���������������������������������d����������ꖦmM�UA��+�P���P�
+      8 | ��
+      9 | �A
+     10 | ���v��O,TZZk
+     11 | -�:p]
+     12 |
+     13 | ,@CaD�1��xK""��X:�� �E ��R�pɆ*W�.�tk[U��k
+     14 | ��.>cv�NzX�K�}b�$���O��h�dΖ2#�P�(�ΏeAr>z��CaB��Bvrj:M�,�c
+     15 | ���Y�BC[�QtV4�yh,@�Y���%��%�� �&<��u�2&`IDL(0
+     16 | bk������*�������nln���m\��
+     17 | ���`w����}��^Ej��`\��}v�������7�x�i�j���&5���tlp\��s��p|�S�-�r�.�+3 �=C��`(0X�)��͊jʲ
+     18 | Y`#
+     19 | ���,��W^���,�H�b%�b��4՘F�[e-�k��Șp�Fi<g��1E��艈�
+     20 |
+     21 | ����LW�n�E������J��1�����{~ְ�ReLLΡ
+        ^ Col 0
+",generic.unverifiable_files
+117. Unverifiable files,CWE-377,Unverifiable file in myApp/lib/core/pdf/simple_wasm/MemGrow.wasm,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/117,skims,SAST,0,"
+     1 | asm�1``````````````~~```
+     2 | `
+     3 | `}`}`}`}}`}}}`}}}}`}`}}`}}}`}}}}` `~`~~`|`|`~
+     4 | envrenvsenvtenvuenvvenvw
+     5 | envx
+     6 | envyenvz
+     7 | envAenvBenvCenvDenvEenvFenvG-envHenvIenvJenvKenvLenvMenvN
+     8 | envOenvPenvQ env
+     9 | __table_baseglobalInfinity|envmemoryQ��envtablepuu�� !
+    10 |
+    11 | %0
+    12 |  
+    13 | 
+    14 | !&
+    15 | 
+    16 |
+    17 |
+    18 | "" 
+    19 |
+    20 |  $
+    21 |
+       ^ Col 0
+",generic.unverifiable_files
+117. Unverifiable files,CWE-377,Unverifiable file in myApp/lib/core/webviewer-core.min.js,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/117,skims,SAST,0,"
+     1 | /** Notice * This file contains works from many authors under various (but compatible) licenses. Please see core.txt for
+     2 | (function(){function $a(ha){var ea=0;return function(){return ea<ha.length?{done:!1,value:ha[ea++]}:{done:!0}}}var fb=""fu
+     3 | function Lb(){ib();var ha=gb.Symbol.iterator;ha||(ha=gb.Symbol.iterator=gb.Symbol(""iterator""));""function""!=typeof Array.p
+     4 | function Jc(ha){for(var ea,f=[];!(ea=ha.next()).done;)f.push(ea.value);return f}function Dd(ha){return ha instanceof Arra
+     5 | Ed(""Promise"",function(ha){function ea(f){this.state_=0;this.DI=void 0;this.Or=[];var ca=this.OE();try{f(ca.resolve,ca.rej
+     6 | this.Yl.length;){var f=this.Yl;this.Yl=[];for(var ca=0;ca<f.length;++ca){var y=f[ca];f[ca]=null;try{y()}catch(x){this.H_(
+     7 | null!=f;break a;case ""function"":ca=!0;break a;default:ca=!1}ca?this.Dba(f):this.eP(f)}};ea.prototype.Dba=function(f){var
+     8 | this.Or){for(var f=0;f<this.Or.length;++f)fa.qN(this.Or[f]);this.Or=null}};var fa=new f;ea.prototype.Jda=function(f){var
+     9 | f)};ea.prototype.vy=function(f,ca){function y(){switch(x.state_){case 1:f(x.DI);break;case 2:ca(x.DI);break;default:throw
+    10 | aa;r--;0==r&&x(h)}}var h=[],r=0;do h.push(void 0),r++,ba(y.value).vy(e(h.length-1),w),y=ca.next();while(!y.done)})};retur
+    11 | function rf(){this.dv=!1;this.tn=null;this.hd=void 0;this.Ha=1;this.UO=this.zq=0;this.Qn=null}function sf(ha){if(ha.dv)th
+    12 | function vf(ha){ha.zq=0;var ea=ha.Qn.MO;ha.Qn=null;return ea}rf.prototype.forIn=function(ha){return new rg(ha)};function
+    13 | function vg(ha,ea){sf(ha.Zb);var f=ha.Zb.tn;if(f)return tg(ha,""return""in f?f[""return""]:function(f){return{value:f,done:!0
+    14 | function tg(ha,ea,f,ba){try{var z=ea.call(ha.Zb.tn,f);if(!(z instanceof Object))throw new TypeError(""Iterator result ""+z+
+    15 | function ug(ha){for(;ha.Zb.Ha;)try{var ea=ha.Y$(ha.Zb);if(ea)return ha.Zb.dv=!1,{value:ea.value,done:!1}}catch(f){ha.Zb.h
+    16 | function Xh(ha){function ea(f){return ha.next(f)}function f(f){return ha.throw(f)}return new Promise(function(ba,z){funct
+    17 | function Zh(ha,ea){Lb();ha instanceof String&&(ha+="""");var f=0,ba={next:function(){if(f<ha.length){var z=f++;return{value
+    18 | function $h(ha,ea,f){ha instanceof String&&(ha=String(ha));for(var ba=ha.length,z=0;z<ba;z++){var fa=ha[z];if(ea.call(f,f
+    19 | var bi=""function""==typeof Object.assign?Object.assign:function(ha,ea){for(var f=1;f<arguments.length;f++){var ba=argument
+    20 | Ed(""WeakMap"",function(ha){function ea(f){this.Tu=(da+=Math.random()+1).toString();if(f){f=sc(f);for(var y;!(y=f.next()).d
+    21 | 4==x.get(y)}catch(w){return!1}}())return ha;var fa=""$jscomp_hidden_""+Math.random();z(""freeze"");z(""preventExtensions"");z(""
+       ^ Col 0
+",generic.unverifiable_files
+393. Use of software with known vulnerabilities in development,CWE-400,"Use of json-bigint at version 0.3.1 with ['GHSA-wgfq-7857-4jcc', 'CVE-2020-8237'] in myApp/package-lock.json",CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/393,skims,SCA,17563,"
+  17553 |           ""dev"": true
+  17554 |         }
+  17555 |       }
+  17556 |     },
+  17557 |     ""jsesc"": {
+  17558 |       ""version"": ""2.5.2"",
+  17559 |       ""resolved"": ""https://registry.npmjs.org/jsesc/-/jsesc-2.5.2.tgz"",
+  17560 |       ""integrity"": ""sha512-OYu7XEzjkCQ3C5Ps3QIZsQfNpqoJyZZA99wd9aWd05NCtC5pWOkShK2mkL6HXQR6/Cy2lbNdPlZBpuQHXE63gA=="",
+  17561 |       ""dev"": true
+  17562 |     },
+> 17563 |     ""json-bigint"": {
+  17564 |       ""version"": ""0.3.1"",
+  17565 |       ""resolved"": ""https://registry.npmjs.org/json-bigint/-/json-bigint-0.3.1.tgz"",
+  17566 |       ""integrity"": ""sha512-DGWnSzmusIreWlEupsUelHrhwmPPE+FiQvg+drKfk2p+bdEYa5mp4PJ8JsCWqae0M2jQNb0HPvnwvf1qOTThzQ=="",
+  17567 |       ""dev"": true,
+  17568 |       ""requires"": {
+  17569 |         ""bignumber.js"": ""^9.0.0""
+  17570 |       }
+  17571 |     },
+  17572 |     ""json-buffer"": {
+  17573 |       ""version"": ""3.0.0"",
+        ^ Col 0
+",npm.npm_pkg_lock_json
+393. Use of software with known vulnerabilities in development,CWE-400,"Use of trim at version 0.0.1 with ['GHSA-w5p7-h5w8-2hfq', 'CVE-2020-7753'] in myApp/package-lock.json",CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/393,skims,SCA,24351,"
+  24341 |           ""integrity"": ""sha512-CJ1QgKmNg3CwvAv/kOFmtnEN05f0D/cn9QntgNOQlQF9dgvVTHj3t+8JPdjqawCHk7V/KA+fbUqzZ9XWhcqPUg=="",
+  24342 |           ""dev"": true
+  24343 |         }
+  24344 |       }
+  24345 |     },
+  24346 |     ""tr46"": {
+  24347 |       ""version"": ""0.0.3"",
+  24348 |       ""resolved"": ""https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz"",
+  24349 |       ""integrity"": ""sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==""
+  24350 |     },
+> 24351 |     ""trim"": {
+  24352 |       ""version"": ""0.0.1"",
+  24353 |       ""resolved"": ""https://registry.npmjs.org/trim/-/trim-0.0.1.tgz"",
+  24354 |       ""integrity"": ""sha512-YzQV+TZg4AxpKxaTHK3c3D+kRDCGVEE7LemdlQZoQXn0iennk10RsIoY6ikzAqJTc9Xjl9C1/waHom/J86ziAQ=="",
+  24355 |       ""dev"": true
+  24356 |     },
+  24357 |     ""trim-newlines"": {
+  24358 |       ""version"": ""1.0.0"",
+  24359 |       ""resolved"": ""https://registry.npmjs.org/trim-newlines/-/trim-newlines-1.0.0.tgz"",
+  24360 |       ""integrity"": ""sha512-Nm4cF79FhSTzrLKGDMi3I4utBtFv8qKy4sq1enftf2gMdpqI8oVQTAfySkTz5r49giVzDj88SVZXP4CeYQwjaw=="",
+  24361 |       ""dev"": true,
+        ^ Col 0
+",npm.npm_pkg_lock_json
+393. Use of software with known vulnerabilities in development,CWE-400,"Use of trim-newlines at version 1.0.0 with ['GHSA-7p7h-4mm5-852v', 'CVE-2021-33623'] in myApp/package-lock.json",CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/393,skims,SCA,24357,"
+  24347 |       ""version"": ""0.0.3"",
+  24348 |       ""resolved"": ""https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz"",
+  24349 |       ""integrity"": ""sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==""
+  24350 |     },
+  24351 |     ""trim"": {
+  24352 |       ""version"": ""0.0.1"",
+  24353 |       ""resolved"": ""https://registry.npmjs.org/trim/-/trim-0.0.1.tgz"",
+  24354 |       ""integrity"": ""sha512-YzQV+TZg4AxpKxaTHK3c3D+kRDCGVEE7LemdlQZoQXn0iennk10RsIoY6ikzAqJTc9Xjl9C1/waHom/J86ziAQ=="",
+  24355 |       ""dev"": true
+  24356 |     },
+> 24357 |     ""trim-newlines"": {
+  24358 |       ""version"": ""1.0.0"",
+  24359 |       ""resolved"": ""https://registry.npmjs.org/trim-newlines/-/trim-newlines-1.0.0.tgz"",
+  24360 |       ""integrity"": ""sha512-Nm4cF79FhSTzrLKGDMi3I4utBtFv8qKy4sq1enftf2gMdpqI8oVQTAfySkTz5r49giVzDj88SVZXP4CeYQwjaw=="",
+  24361 |       ""dev"": true,
+  24362 |       ""optional"": true
+  24363 |     },
+  24364 |     ""trim-repeated"": {
+  24365 |       ""version"": ""1.0.0"",
+  24366 |       ""resolved"": ""https://registry.npmjs.org/trim-repeated/-/trim-repeated-1.0.0.tgz"",
+  24367 |       ""integrity"": ""sha512-pkonvlKk8/ZuR0D5tLW8ljt5I8kmxp2XKymhepUeOdCEfKpZaktSArkLHZt76OB1ZvO9bssUsDty4SWhLvZpLg=="",
+        ^ Col 0
+",npm.npm_pkg_lock_json
+188. Lack of data validation - Modify DOM Elements,CWE-489,Creation of dynamic DOM elements from user controlled inputs or the event origin is not checked in myApp/lib/core/pdf/WasmThread.js,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/188,skims,SAST,32,"
+  13 | nction(a,n){this.fs_q=this.fs_read_counter=0;this.needCallback=!1;this.fs_read_total=a;this.fs_q=n}}();d.AsyncFSHack={rea
+  14 | syncFSHack.readingAsyncFS=0,delete d.AsyncFSHack.readCalls[a])},C=function(a,n,b,h,f,e){this.lruList=[];this.chunkMap={};
+  15 | ].push(b);if(n){b=Math.min(a+this.chunkSize,this.length)-1;var h=new XMLHttpRequest;h.open(""GET"",this.url,!0);h.responseT
+  16 | ed to load data from""+e.url),b=new Int8Array(0);for(var n=e.chunkReader[a],f=0;f<n.length;f++)n[f](b);delete e.chunkReade
+  17 | Chunks:function(a,b){for(var n=a.length,h=Array(n),f=0,e=function(a,e){h[e]=a;++f;f===n&&b(h)},m=0;m<n;++m)this.wrapChunk
+  18 | this.chunkMap[e]?(m=this.chunkMap[e].subarray(0,b),a.set(m,f),this.lruUpdate(e)):this.hadChunk(e)?h.push([e,0,b,f]):(m=ne
+  19 | his.lruList.shift(),this.chunkMap[h]=null);this.lruUpdate(b);this.chunkMap[b]=a}};var B=function(a){this.chunkStorage=a;t
+  20 | [1]+e[2]);n.set(f,e[3])}A(m)})):f&&A(m);h+=e}else e=0;if(!f){z(m);b+=e;if(c-=e){f=this.chunkStorage.getCacheData();c>f.le
+  21 | .length&&(d=b.length),f=h-this.length,d-=f,m=a.subarray(m,m+d),b.subarray(f,f+d).set(m);h+=d;e+=d}this.position=h;return
+  22 | ;var f=this;h.onload=function(){var a=new Int8Array(h.result);f.readerPool.push(h);d(a)};h.readAsArrayBuffer(this.file.sl
+  23 | n(){return this.filePosition},getTotalSize:function(){return this.fileLength}};var v={open:function(a){var b=a.path.slice
+  24 | ider.write(b,d,c,f):0}},y=function(a){if(!q[a]){var b=d.FS.makedev(3,5);d.FS.registerDevice(b,v);d.FS.mkdev(a,511,b);q[a]
+  25 | ull!==a&&(""[object File]""===b||""[object Blob]""===b)}}).call(this,l(3))},function(c,b,l){c.exports=l(2)},function(c,b,l){f
+  26 | }}),q=!0);r.sendTestResponse();d.PThread.receiveObjectTransfer=function(){var a=d.Module.GetNextResponseMessage();d.getTh
+  27 | )&&(a[b]=f(a[b]));return a},C=function e(a){if(""object""===g(a)&&null!==a)if(a.isArrayBufferRef){var b=d.FS.readFile(a.han
+  28 | DevId=e):Object(a.d)(e)&&(e=Object(a.a)(e),v[f]=e,c.value=e);else if(""SaveDoc""!==e&&""SaveDocFromFixedElements""!==e||!c)""G
+  29 | ilePath=k}d.Module.HandleMessage(A(b))},r;d.MainThreadLabel=!0;d.getThreadedWasmWorker=function(){return r};var D=functio
+  30 | return a!==b}))},sendTestResponse:function(){x&&u&&(this.handleMessage({action:""test"",data:{supportTypedArray:!0,supportT
+  31 | ary""});c.fileData=g.buffer;c=w[e].docId;c in p&&(Object(a.c)(p[c]),delete p[c]);c&&!w[e].finishedWithDocument?p[c]=f:d.FS
+> 32 | EventListener(""message"",m))};window.addEventListener(""message"",function(a){a=a.data;if(""loadWasmWorker""===a.action){var b
+  33 | ndow)
+     ^ Col 111
+",javascript.tsx_lack_of_validation_event_listener
+097. Reverse tabnabbing,CWE-502,"Use of window.open() method without ""noopener, noreferrer"" window features allows target page to change the contents of original page. in myApp/src/helpers/print.js",CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/097,skims,SAST,40,"
+   30 |   let { pagesToPrint } = options;
+   31 |
+   32 |   if (!core.getDocument()) {
+   33 |     return;
+   34 |   }
+   35 |
+   36 |   const documentType = core.getDocument().getType();
+   37 |   const bbURLPromise = core.getPrintablePDF();
+   38 |
+   39 |   if (bbURLPromise) {
+>  40 |     const printPage = window.open('', '_blank');
+   41 |     printPage.document.write(i18n.t('message.preparingToPrint'));
+   42 |     bbURLPromise.then(result => {
+   43 |       printPage.location.href = result.url;
+   44 |     });
+   45 |   } else if (isEmbedPrintSupported && documentType === workerTypes.PDF) {
+   46 |     dispatch(actions.openElement('loadingModal'));
+   47 |     printPdf().then(() => {
+   48 |       dispatch(actions.closeElement('loadingModal'));
+   49 |     });
+   50 |   } else if (includeAnnotations || includeComments || printWithoutModal) {
+      ^ Col 0
+",javascript.javascript_has_reverse_tabnabbing
+393. Use of software with known vulnerabilities in development,CWE-611,Use of decompress-tar at version 4.1.1 with ['SNYK-JS-DECOMPRESSTAR-559095'] in myApp/package-lock.json,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:L/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/393,skims,SCA,10449,"
+  10439 |     },
+  10440 |     ""decompress-response"": {
+  10441 |       ""version"": ""3.3.0"",
+  10442 |       ""resolved"": ""https://registry.npmjs.org/decompress-response/-/decompress-response-3.3.0.tgz"",
+  10443 |       ""integrity"": ""sha512-BzRPQuY1ip+qDonAOz42gRm/pg9F768C+npV/4JOsxRC2sq+Rlk+Q4ZCAsOhnIaMrgarILY+RMUIvMmmX1qAEA=="",
+  10444 |       ""dev"": true,
+  10445 |       ""requires"": {
+  10446 |         ""mimic-response"": ""^1.0.0""
+  10447 |       }
+  10448 |     },
+> 10449 |     ""decompress-tar"": {
+  10450 |       ""version"": ""4.1.1"",
+  10451 |       ""resolved"": ""https://registry.npmjs.org/decompress-tar/-/decompress-tar-4.1.1.tgz"",
+  10452 |       ""integrity"": ""sha512-JdJMaCrGpB5fESVyxwpCx4Jdj2AagLmv3y58Qy4GE6HMVjWz1FeVQk1Ct4Kye7PftcdOo/7U7UKzYBJgqnGeUQ=="",
+  10453 |       ""dev"": true,
+  10454 |       ""requires"": {
+  10455 |         ""file-type"": ""^5.2.0"",
+  10456 |         ""is-stream"": ""^1.1.0"",
+  10457 |         ""tar-stream"": ""^1.5.2""
+  10458 |       },
+  10459 |       ""dependencies"": {
+        ^ Col 0
+",npm.npm_pkg_lock_json
+011. Use of software with known vulnerabilities,CWE-611,"Use of i18next at version 19.0.3 with ['SNYK-JS-I18NEXT-1065979', 'SNYK-JS-I18NEXT-575536'] in myApp/package.json",CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:L/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/011,skims,SCA,34,"
+   24 |     ""@babel/polyfill"": ""^7.11.5"",
+   25 |     ""@pdftron/webviewer-react-toolkit"": ""^0.7.4"",
+   26 |     ""autolinker"": ""^3.11.1"",
+   27 |     ""classnames"": ""^2.2.6"",
+   28 |     ""css-vars-ponyfill"": ""^2.3.2"",
+   29 |     ""dayjs"": ""^1.8.19"",
+   30 |     ""fast-deep-equal"": ""^3.1.3"",
+   31 |     ""file-saver"": ""git+https://github.com/ZhijieZhang/FileSaver.js.git"",
+   32 |     ""hotkeys-js"": ""^3.7.3"",
+   33 |     ""html2canvas"": ""git+https://github.com/PDFTron/html2canvas.git#pdftron-alpha10"",
+>  34 |     ""i18next"": ""^19.0.3"",
+   35 |     ""i18next-http-backend"": ""^1.0.16"",
+   36 |     ""react"": ""^17.0.0"",
+   37 |     ""react-color"": ""^2.18.1"",
+   38 |     ""react-dnd"": ""^14.0.2"",
+   39 |     ""react-dnd-html5-backend"": ""^14.0.0"",
+   40 |     ""react-dom"": ""^17.0.0"",
+   41 |     ""react-draggable"": ""^4.3.1"",
+   42 |     ""react-hot-loader"": ""^4.12.19"",
+   43 |     ""react-i18next"": ""^11.3.1"",
+   44 |     ""react-measure"": ""^2.3.0"",
+      ^ Col 0
+",npm.npm_package_json
+393. Use of software with known vulnerabilities in development,CWE-611,Use of unset-value at version 1.0.0 with ['SNYK-JS-UNSETVALUE-2400660'] in myApp/package-lock.json,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:L/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/393,skims,SCA,24796,"
+  24786 |       ""resolved"": ""https://registry.npmjs.org/unpipe/-/unpipe-1.0.0.tgz"",
+  24787 |       ""integrity"": ""sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ=="",
+  24788 |       ""dev"": true
+  24789 |     },
+  24790 |     ""unquote"": {
+  24791 |       ""version"": ""1.1.1"",
+  24792 |       ""resolved"": ""https://registry.npmjs.org/unquote/-/unquote-1.1.1.tgz"",
+  24793 |       ""integrity"": ""sha512-vRCqFv6UhXpWxZPyGDh/F3ZpNv8/qo7w6iufLpQg9aKnQ71qM4B5KiI7Mia9COcjEhrO9LueHpMYjYzsWH3OIg=="",
+  24794 |       ""dev"": true
+  24795 |     },
+> 24796 |     ""unset-value"": {
+  24797 |       ""version"": ""1.0.0"",
+  24798 |       ""resolved"": ""https://registry.npmjs.org/unset-value/-/unset-value-1.0.0.tgz"",
+  24799 |       ""integrity"": ""sha512-PcA2tsuGSF9cnySLHTLSh2qrQiJ70mn+r+Glzxv2TWZblxsxCC52BDlZoPCsz7STd9pN7EZetkWZBAvk4cgZdQ=="",
+  24800 |       ""dev"": true,
+  24801 |       ""requires"": {
+  24802 |         ""has-value"": ""^0.3.1"",
+  24803 |         ""isobject"": ""^3.0.0""
+  24804 |       },
+  24805 |       ""dependencies"": {
+  24806 |         ""has-value"": {
+        ^ Col 0
+",npm.npm_pkg_lock_json
+393. Use of software with known vulnerabilities in development,CWE-74,"Use of ejs at version 2.7.4 with ['GHSA-phwq-j96m-2c2q', 'CVE-2022-29078'] in myApp/package-lock.json",CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/393,skims,SCA,11138,"
+  11128 |       ""requires"": {
+  11129 |         ""safe-buffer"": ""^5.0.1""
+  11130 |       }
+  11131 |     },
+  11132 |     ""ee-first"": {
+  11133 |       ""version"": ""1.1.1"",
+  11134 |       ""resolved"": ""https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz"",
+  11135 |       ""integrity"": ""sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow=="",
+  11136 |       ""dev"": true
+  11137 |     },
+> 11138 |     ""ejs"": {
+  11139 |       ""version"": ""2.7.4"",
+  11140 |       ""resolved"": ""https://registry.npmjs.org/ejs/-/ejs-2.7.4.tgz"",
+  11141 |       ""integrity"": ""sha512-7vmuyh5+kuUyJKePhQfRQBhXV5Ce+RnaeeQArKu1EAMpL3WbgMt5WG6uQZpEVvYSSsxMXRKOewtDk9RaTKXRlA=="",
+  11142 |       ""dev"": true
+  11143 |     },
+  11144 |     ""electron-to-chromium"": {
+  11145 |       ""version"": ""1.4.659"",
+  11146 |       ""resolved"": ""https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.659.tgz"",
+  11147 |       ""integrity"": ""sha512-sRJ3nV3HowrYpBtPF9bASQV7OW49IgZC01Xiq43WfSE3RTCkK0/JidoCmR73Hyc1mN+l/H4Yqx0eNiomvExFZg=="",
+  11148 |       ""dev"": true
+        ^ Col 0
+",npm.npm_pkg_lock_json
+393. Use of software with known vulnerabilities in development,CWE-918,"Use of request at version 2.88.0 with ['GHSA-p8p7-x288-28g6', 'CVE-2023-28155'] in myApp/package-lock.json",CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/393,skims,SCA,22385,"
+  22375 |     },
+  22376 |     ""repeating"": {
+  22377 |       ""version"": ""2.0.1"",
+  22378 |       ""resolved"": ""https://registry.npmjs.org/repeating/-/repeating-2.0.1.tgz"",
+  22379 |       ""integrity"": ""sha512-ZqtSMuVybkISo2OWvqvm7iHSWngvdaW3IpsT9/uP8v4gMi591LY6h35wdOfvQdWCKFWZWm2Y1Opp4kV7vQKT6A=="",
+  22380 |       ""dev"": true,
+  22381 |       ""requires"": {
+  22382 |         ""is-finite"": ""^1.0.0""
+  22383 |       }
+  22384 |     },
+> 22385 |     ""request"": {
+  22386 |       ""version"": ""2.88.0"",
+  22387 |       ""resolved"": ""https://registry.npmjs.org/request/-/request-2.88.0.tgz"",
+  22388 |       ""integrity"": ""sha512-NAqBSrijGLZdM0WZNsInLJpkJokL72XYjUpnB0iwsRgxh7dB6COrHnTBNwN0E+lHDAJzu7kLAkDeY08z2/A0hg=="",
+  22389 |       ""dev"": true,
+  22390 |       ""requires"": {
+  22391 |         ""aws-sign2"": ""~0.7.0"",
+  22392 |         ""aws4"": ""^1.8.0"",
+  22393 |         ""caseless"": ""~0.12.0"",
+  22394 |         ""combined-stream"": ""~1.0.6"",
+  22395 |         ""extend"": ""~3.0.2"",
+        ^ Col 0
+",npm.npm_pkg_lock_json
+393. Use of software with known vulnerabilities in development,CWE-937,"Use of got at version 8.3.2 with ['GHSA-pfrx-2q88-qq97', 'CVE-2022-33987'] in myApp/package-lock.json",CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N/E:U/RL:O/RC:C,https://docs.fluidattacks.com/criteria/vulnerabilities/393,skims,SCA,13548,"
+  13538 |     },
+  13539 |     ""gopd"": {
+  13540 |       ""version"": ""1.0.1"",
+  13541 |       ""resolved"": ""https://registry.npmjs.org/gopd/-/gopd-1.0.1.tgz"",
+  13542 |       ""integrity"": ""sha512-d65bNlIadxvpb/A2abVdlqKqV563juRnZ1Wtk6s1sIR8uNsXR70xqIzVqxVf1eTqDunwT2MkczEeaezCKTZhwA=="",
+  13543 |       ""dev"": true,
+  13544 |       ""requires"": {
+  13545 |         ""get-intrinsic"": ""^1.1.3""
+  13546 |       }
+  13547 |     },
+> 13548 |     ""got"": {
+  13549 |       ""version"": ""8.3.2"",
+  13550 |       ""resolved"": ""https://registry.npmjs.org/got/-/got-8.3.2.tgz"",
+  13551 |       ""integrity"": ""sha512-qjUJ5U/hawxosMryILofZCkm3C84PLJS/0grRIpjAwu+Lkxxj5cxeCU25BG0/3mDSpXKTyZr8oh8wIgLaH0QCw=="",
+  13552 |       ""dev"": true,
+  13553 |       ""requires"": {
+  13554 |         ""@sindresorhus/is"": ""^0.7.0"",
+  13555 |         ""cacheable-request"": ""^2.1.1"",
+  13556 |         ""decompress-response"": ""^3.3.0"",
+  13557 |         ""duplexer3"": ""^0.1.4"",
+  13558 |         ""get-stream"": ""^3.0.0"",
+        ^ Col 0
+",npm.npm_pkg_lock_json
+Summary: 34 vulnerabilities were found in your targets.

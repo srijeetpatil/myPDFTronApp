@@ -1,0 +1,18 @@
+namespace: myApp
+output:
+  file_path: ./Fluid-Attacks-Results.csv
+  format: CSV
+working_dir: .
+language: EN
+apk:
+  include:
+    - glob(**/*.apk)
+sast:
+  include:
+    - .
+  exclude:
+    # Folders created by package managers, e.g. node_modules, vendor, dist.
+    - glob(**/node_modules/**)
+sca:
+  include:
+    - .
